@@ -243,21 +243,15 @@ document.getElementById("loader").style.display = "none";
 },4000);
 };
 function checkPassword(){
-document.getElementById("secretContent").style.display = "block";
-alert("Button working!");
-  
 
 let pass =
-document.getElementById("secretPassword").value;
+document.getElementById("secretPassword").value.trim();
 
 if(pass === "Rasmalai"){
 
-alert(document.getElementById("secretContent"));
-
 document.getElementById("secretContent").style.display = "block";
 
-}
-else{
+}else{
 
 alert("Wrong Password 😤");
 
