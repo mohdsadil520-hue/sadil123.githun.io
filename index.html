@@ -30,6 +30,47 @@ padding:20px;
 border-radius:20px;
 box-shadow:0 0 15px rgba(0,0,0,0.1);
 }
+.gallery{
+display:flex;
+flex-direction:column;
+gap:40px;
+margin-top:40px;
+}
+
+.photo-card{
+background:white;
+padding:15px;
+width:280px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+border-radius:15px;
+transition:0.4s;
+}
+
+.photo-card img{
+width:100%;
+border-radius:10px;
+}
+
+.photo-card p{
+text-align:center;
+font-size:16px;
+margin-top:10px;
+}
+
+.left{
+transform:rotate(-4deg);
+margin-left:40px;
+}
+
+.right{
+transform:rotate(4deg);
+margin-left:auto;
+margin-right:40px;
+}
+
+.photo-card:hover{
+transform:scale(1.05);
+}
 </style>
 
 </head>
@@ -60,15 +101,29 @@ And you're never as alone as your mind sometimes makes you feel.
 
 <br>
 
+<div class="gallery">
+
+<div class="photo-card left">
 <img src="photo1.jpg.jpeg">
-<p>Proof that you're actually photogenic.✨</p>
+<p>✨ Proof that you're actually photogenic</p>
+</div>
+
+<div class="photo-card right">
 <img src="photo2.jpg.jpeg">
-<p>Certified Chaos. Premium edition.😭</p>
+<p>😺 Certified Chaos. Premium Edition.</p>
+</div>
+
+<div class="photo-card left">
 <img src="photo3.jpg.jpeg">
-<p>Main character energy.🌙</p>
+<p>🌙 Main Character Energy.</p>
+</div>
+
+<div class="photo-card right">
 <img src="photo4.jpg.jpeg">
-<p>Still one of my favorite people.🌸</p>
-<br><br>
+<p>🌸 Still One Of My Favorite Humans.</p>
+</div>
+
+</div>
 
 <div class="card">
 
