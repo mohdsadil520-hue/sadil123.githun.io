@@ -96,16 +96,16 @@ z-index:9999;
 
 .secret-box{
 text-align:center;
-marginitop:40px;
+margin-top:40px;
 }
 
-.secret-content{
+.secret-#content{
 display:none;
 background:#ffe6f5;
 padding:20px;
 border-radius:15px;
 margin-top:20px;
-box-shadow:0 5px 15px rgba(0,0,0,0,1);
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 </style>
 
@@ -240,17 +240,14 @@ Tum sirf meri Rasmalai ho.. 🍮😋
 window.onload = function() {
 setTimeout(() => {
 document.getElementById("loader").style.display = "none";
-
 document.getElementById("content").style.display = "block";
 },4000);
 };
+
 function checkPassword(){
 
 let pass =
 document.getElementById("secretPassword").value.trim();
-
-  alert(pass);
-}
 
 if(pass === "Rasmalai"){
 
@@ -264,4 +261,3 @@ alert("Wrong Password 😤");
 
 }
 </script>
-
