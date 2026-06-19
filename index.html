@@ -110,6 +110,26 @@ margin-right:auto;
 margin-right:auto;
 box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
+
+.petal{
+position:fixed;
+top:-10px;
+font-size:20px;
+animation:fall linear infinite;
+pointer-events:none;
+z-index:999;
+}
+
+@keyframes fall{
+0%{
+transform:translateY(-10px) rotate(0deg);
+opacity:1;
+}
+100%{
+transform:translateY(110vh) rotate(360deg);
+opacity:0.3;
+}
+}  
 </style>
 
 </head>
@@ -261,6 +281,26 @@ document.getElementById("secretContent").style.display = "block";
 alert("Wrong Password 😤");
 
 }
+
+}
+
+for(let i=0;i<20;i++){
+
+let petal = document.createElement("div");
+
+petal.innerHTML = "🌸";
+
+petal.className = "petal";
+
+petal.style.left = Math.random()*100 + "vw";
+
+petal.style.animationDuration =
+(5 + Math.random()*5) + "s";
+
+petal.style.fontSize =
+(15 + Math.random()*15) + "px";
+
+document.body.appendChild(petal);
 
 }
 </script>
