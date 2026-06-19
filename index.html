@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>For My Best Friend 🌸</title>
+<title>For My Best Friend ( Hiba ) 🌸</title>
 
 <style>
 body{
@@ -93,6 +93,20 @@ font-size:30px;
 font-weight:bold;
 z-index:9999;
 }
+
+.secret-bok{
+text-align:center;
+marginitop:40px;
+}
+
+.secret-content{
+display:none;
+background:#ffe6f5;
+padding:20px;
+border-radius:15px;
+margin-top:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0,1);
+}
 </style>
 
 </head>
@@ -102,7 +116,7 @@ z-index:9999;
   🌸 Opening Something Special ...
 </div>
 
-<div id="conetent">
+<div id="content">
   
 <h1>🌸 Hey Rasmalai..✌️😋🌸</h1>
 
@@ -184,6 +198,39 @@ Open Letter 💌
 </button>
 </a>
 </div>
+<div class="secret-box">
+
+<button onclick="checkPassword()">
+🔐 Secret Section
+</button>
+
+<div id="secretMessage" class="secret-content">
+
+<h3>🌙 Secret Message</h3>
+
+<p>
+Agar tum yaha tab pohoch gai ho, to shayad tumhe pata hai ki tum mere liye kitni special ho. 😌
+</p>
+
+<p>
+Khair ye section bas ye test karne ke liye tha ki tum sach mei chize notice karti ho ya nahi.
+</p>
+  
+<p>Just a little reminder:
+</p>
+<p> Hamesha khush rehna no matter what. 
+Tum hasti raha karo kyuki achhi lagti ho.
+Tum bohot pyari ho, prr jo bhi ho meri ho.
+Apna khayal rakha karo..samjhiii!!
+</p>
+  
+<p>
+Tum sirf meri Rasmalai ho.. 🍮😋
+</p>
+
+</div>
+
+</div>
 
 <script>
 window.onload = function() {
@@ -191,5 +238,21 @@ setTimeout(() => {
 document.getElementById("loader").style.display = "none";
 },4000);
 };
+function checkPassword(){
+
+let pass =
+document.getElementById("secretPassword").value;
+
+if(pass === "Rasmalai"){
+
+document.getElementById("secretContent").style.display = "block";
+
+}else{
+
+alert("Wrong Password 😤");
+
+}
+
+}
 </script>
 
