@@ -63,9 +63,60 @@ color:#ff6fa5;
 font-weight:bold;
 }
 
+.fancy-title{
+
+display:inline-block;
+
+padding:15px 30px;
+
+border-radius:25px;
+
+background:linear-gradient(
+45deg,
+#ff8fb1,
+#ffc2d9
+);
+
+color:white;
+
+box-shadow:
+0 5px 15px rgba(255,105,180,0.4);
+
+transition:0.4s;
+
+}
+
+.fancy-title{
+
+animation:glow 3s infinite;
+}
+
+@keyframes glow{
+
+0%{
+box-shadow:
+0 5px 15px rgba(255,105,180,0.3);
+}
+
+50%{
+box-shadow:
+0 5px 30px rgba(255,105,180,0.7);
+}
+
+100%{
+box-shadow:
+0 5px 15px rgba(255,105,180,0.3);
+}
+
+}
 </style></head><body><div class="card"><p class="intro">
 One last thing...
-</p><h1>💌 A Letter For You</h1>
+</p> 
+<h1 class="fancy-title">
+
+Something I've been wanting to say...💌💖
+
+</h1>
 <p>I know things haven't been easy lately.
 Maybe you're tired.
 Maybe you're carrying things that you don't tell everyone.
